@@ -1,7 +1,5 @@
-// import java.util.*;
-public class CommonPins {
+public class CommonPins4Digits {
   public static void main(String[] args) {
-    // Scanner sc = new Scanner(System.in);
     System.out.println("Common 4 Digit Pins");
     for(int i = 0; i <= 9;i++) {
       System.out.print("\""+i+i+i+i+"\", ");
@@ -19,6 +17,12 @@ public class CommonPins {
       if (i == 9)
         j = 0;
       System.out.print("\"" + i + i + j + j + "\", ");
+    }
+    for (int i = 0; i <= 9; i++) {
+      int j = i + 1;
+      if (i == 9)
+        j = 0;
+      System.out.print("\"" + j + j + i + i + "\", ");
     }
   }
 }
