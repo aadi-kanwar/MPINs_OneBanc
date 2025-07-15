@@ -1,4 +1,4 @@
-from ui import (
+from app import (
   # get_combinations_4, get_combinations_6,
   mpin_strength_4, mpin_strength_6,
   mpin_reason_4, mpin_reason_6
@@ -20,6 +20,11 @@ test_cases_4 = [
   {"pin": "3344", "dob": "20-03-1989", "spouse": "01-01-1995", "anniversary": "05-05-2005", "strength": 0, "reason": "COMMONLY_USED"},
   {"pin": "1990", "dob": "11-11-1990", "spouse": "01-01-1995", "anniversary": "02-02-2000", "strength": 0, "reason": "DEMOGRAPHIC_DOB_SELF"},
   {"pin": "7452", "dob": "31-12-1988", "spouse": "15-09-1991", "anniversary": "23-03-2015", "strength": 1, "reason": "N/A"},
+  {"pin": "5555", "dob": "10-10-1991", "spouse": "11-11-1992", "anniversary": "12-12-1993", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "9898", "dob": "09-08-1998", "spouse": "10-10-1998", "anniversary": "11-11-1998", "strength": 1, "reason": "N/A"},
+  {"pin": "4578", "dob": "02-03-1990", "spouse": "12-05-1991", "anniversary": "01-08-2000", "strength": 1, "reason": "N/A"},
+  {"pin": "8888", "dob": "08-08-1988", "spouse": "09-09-1989", "anniversary": "10-10-1990", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "1230", "dob": "01-01-2000", "spouse": "01-01-2000", "anniversary": "01-01-2000", "strength": 1, "reason": "N/A"},
 ]
 
 # 6 - Digit MPIN Test Cases
@@ -39,6 +44,11 @@ test_cases_6 = [
   {"pin": "654321", "dob": "10-10-1980", "spouse": "20-12-1985", "anniversary": "01-01-2000", "strength": 0, "reason": "COMMONLY_USED"},
   {"pin": "859634", "dob": "02-02-2002", "spouse": "03-03-2003", "anniversary": "04-04-2004", "strength": 1, "reason": "N/A"},
   {"pin": "000000", "dob": "01-01-2001", "spouse": "02-02-2002", "anniversary": "03-03-2003", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "123123", "dob": "01-01-1990", "spouse": "02-02-1991", "anniversary": "03-03-1992", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "456789", "dob": "04-05-1995", "spouse": "06-07-1996", "anniversary": "08-09-2018", "strength": 1, "reason": "N/A"},
+  {"pin": "112233", "dob": "11-12-1992", "spouse": "22-01-1993", "anniversary": "03-04-2014", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "334455", "dob": "03-04-1994", "spouse": "05-06-1995", "anniversary": "07-08-2016", "strength": 0, "reason": "COMMONLY_USED"},
+  {"pin": "998877", "dob": "09-10-1998", "spouse": "11-12-1999", "anniversary": "13-14-2010", "strength": 0, "reason": "COMMONLY_USED"},
 ]
 
 def run_tests(cases, check_strength, check_reason, digits=4):

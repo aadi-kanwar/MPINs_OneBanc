@@ -38,6 +38,7 @@ def mpin_strength(pin, dob_self, dob_spouse, anniversary):
   return 1
 
 # Part C : Enchance the above to also give a reason for the strength of the MPIN being WEAK.
+
 def mpin_reason(pin, dob_self, dob_spouse, anniversary):
   if pin in common_pins:
     return "COMMONLY_USED"
@@ -66,4 +67,3 @@ if strength == 0:
 else:
   print("Strength: Strong")
   print("Reason:")
-
