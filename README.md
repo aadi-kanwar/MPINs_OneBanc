@@ -15,7 +15,7 @@ This project is a simple Python + Streamlit app that checks the **strength of a 
 `streamlit run ui.py`
 
 ### Check out the deployed project
-[MPIN Strength Checker](https://aadikanwar-mpin.streamlit.app/)
+[MPIN Strength Checker](https://aadi-mpin.streamlit.app/)
 
 
 ### File Guidlines
